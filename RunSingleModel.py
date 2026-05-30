@@ -59,7 +59,7 @@ def adjust_learning_rate(optimizer, epoch):
     optimizer.param_groups[0]['lr'] = lr
 epoch = 0
 # model = ResNet(BasicBlock, [2,2,2,2], num_classes)
-model = CNNLSTMFusion.CNNLSTMSTFusion(input_channels=12, hidden_dim=64, kernel_size=5, num_layers=2,
+model = CNNLSTMFusion.CNNLSTMSTFusion(input_channels=18, hidden_dim=64, kernel_size=5, num_layers=2,
                                                 num_classes=num_classes)
 model.cpu()
 #print(model)
